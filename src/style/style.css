@@ -1,0 +1,1158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    /* height: 500vh; */
+  
+}
+
+.menul {
+    position: absolute;
+
+    transform: translate(-95%, 10%);
+    background-color: rgb(24, 24, 24, 1);
+}
+
+.dropdown-item:hover {
+    background-color: #e30813;
+}
+
+.searchBar {
+    display: none;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.heatb {
+    background: #000;
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+}
+
+.heatb>a,
+li {
+    color: white;
+}
+
+.logo {
+    width: 50px;
+}
+
+.l {
+    padding: 100px;
+}
+
+a {
+    text-decoration: none;
+    /* color: rgb(185, 42, 42); */
+}
+
+.left>li {
+    list-style: none;
+    margin: 10px 10px 0;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+/*Feature*/
+.feature {
+    position: relative;
+    /* background: rgb(22, 22, 22); */
+    /* background-color: rgb(24, 24, 24, 1); */
+    /* border: 1px solid; */
+
+    height: 100vh;
+    width: 100%;
+    float: left;
+    /* transform: translateX(50%); */
+}
+
+.featureImage {
+
+    float: right;
+    width: 65%;
+    height: 35%;
+    /* image-rendering: pixelated; */
+
+    height: 100vh;
+    object-fit: center;
+    /* z-index: -100; */
+}
+
+.boxFeature1 {
+    position: absolute;
+    color: white;
+    z-index: 10;
+    margin: 100px 50px;
+}
+
+.featureParagraph {
+    width: 400px;
+}
+
+.infoFeature {
+    margin: 15px 0;
+}
+
+.boxFeature2::before {
+    content: "";
+    display: block;
+    filter: blur(60px);
+    background-color: rgb(24, 24, 24);
+    float: left;
+    width: 50%;
+    top: 0;
+    left: 0;
+    margin: -4% 0 0 0;
+    height: 110vh;
+    position: absolute;
+}
+
+.home {
+    background-color: rgb(24, 24, 24, 1);
+}
+
+.btnFeature {
+    background: rgba(63, 61, 61, 0.5);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.btnFeature:nth-child(1) {
+    margin-right: 10px;
+}
+
+.btnContentFeature {}
+
+.boxFeature2 {
+    width: 100% !important;
+}
+
+.featureTitle {
+    font-size: 90px;
+    /* margin: 0.1rem 0 10px 0; */
+}
+
+/*Review*/
+.containerReview {
+    display: flex;
+    border: 1px solid ;
+    overflow-x: auto;
+    width: 110%;
+   
+    
+transform: translate(0%,-20%);  
+
+
+}
+
+.reviewImage {
+    padding: 10px 10px 0 0;
+    width: 200px;
+    height: 250px;
+}
+
+/*signup*/
+.containerSign {
+    color: white;
+    background-image: url(../images/login.jpg);
+    height: 140vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ .headSign {
+    height: 90px;
+    /* border: 1px solid; */
+}
+
+.containerSign {
+    margin: 0 0 90px 0;
+}
+
+.logoSign {
+    height: 10vh;
+}
+
+.containerForm {
+    /* border: 1px solid; */
+    width: 35%;
+    margin: 0px auto;
+    background: rgb(0, 0, 0, 0.7);
+    padding: 20px 58px 0.5px;
+}
+.welcome{
+    background-color: rgb(24, 24, 24, 1);
+}
+.form {
+    /* border: 1px solid; */
+    margin: 50px auto;
+    display: block;
+    width: 90%;
+    font-size: 16px;
+}
+
+.signupTitle {
+    margin: 10px auto;
+    display: block;
+    margin: 0 0 26px;
+}
+
+#email,
+#password {
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px 10px;
+}
+bgDevice
+
+#rem {
+    margin-right: 3px;
+}
+
+.btnSign {
+    width: 100%;
+    background-color: #e30813;
+    padding: 10px 20px;
+    color: white;
+    /* font-size: 14px; */
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+}
+
+/* .inputSig {
+    background-color: rgb(24, 24, 24, 1);
+    color: white;
+} */
+/* .formContent .inputBox input:focus ~ label,
+.formContent .inputBox input:valid ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 13px;
+
+} */
+
+.contentRemember {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.containerRemmbeer>a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.containerHelp {
+    margin: 50px 0 0 0;
+    font-size: 16px;
+}
+
+.containerHelp>p,
+span {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+        sans-serif;
+}
+
+.footerSign {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerFooter {
+    background: rgb(0, 0, 0, 0.7);
+    margin: 30px 0;
+    padding: 30px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.containerFooter>h6 {
+    margin-bottom: 30px;
+}
+
+.boxFouterSignup>p>a {
+    /* color: rgba(255, 255, 255, 0.6); */
+    /* border: 1px solid; */
+}
+
+@media screen and (max-width: 739px) {
+    .containerSign {
+        background: #000;
+        /* width: 100%; */
+    }
+
+    .containerForm {
+        width: 100%;
+        padding: 0;
+        /* border: 1px solid red; */
+    }
+
+    .headSign {
+        margin-left: 80px;
+    }
+
+    .footerSign {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        /* justify-content: flex-start; */
+        /* border: 1px solid; */
+    }
+
+    .hr {
+        display: block;
+    }
+}
+
+/* @media screen and (max-width : 993px) {
+    .containerSign{
+       
+    }
+    .form{
+        width: 100%;
+ 
+    }
+    .containerForm{
+        width: 50%;
+    }
+    
+} */
+
+/* @media screen and (min-width: 3000px) {
+  .container {
+    max-width: 80%;
+  }
+  .featureImage {
+    width: 50%;
+    max-height: 10%;
+    
+  }
+
+  .boxFeature1 {
+  }
+  .infoFeature {
+    width: 0%;
+    border: 1px solid;
+    font-size: 30px;
+  }
+  .featureParagraph {
+    border: 1px solid;
+    width: 50%;
+    font-size: 50px;
+  }
+  .featureTitle {
+    margin: 2% 0;
+    font-size: 70px;
+  }
+} */
+/*Home*/
+
+.containerHome {
+    background-image: url(../images/login.jpg);
+    max-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navBarNoSignUp {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.homeLogo {
+    max-width: 20vh;
+}
+
+.mainContainerNav {
+    margin: 0 auto;
+    width: 80%;
+    /* border: 1px solid red; */
+    height: 90vh;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerHome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.featureHome>h1,
+h3 {
+    color: white;
+    text-align: center;
+}
+
+.featureHome>h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 10% 0 5% 0;
+}
+
+.featureHome>h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.getStartHome {
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.getStartInput {
+    width: 100%;
+    line-height: 1.5rem;
+    padding: 1.5rem 1rem 0.5rem;
+    padding: 12px 24px;
+    background-color: rgb(24, 24, 24, 1);
+    color: white;
+}
+
+.getStartInput::placeholder {
+    color: #ffffff;
+}
+
+.getStartInput:focus {
+    background-color: rgb(24, 24, 24, 1);
+    outline: none;
+    box-sizing: red;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    border: #ffffff;
+    box-shadow: none;
+}
+
+.getStartInput:active {
+    outline: none;
+}
+
+.contentHome {
+    /* margin-top: 2px; */
+    width: 100%;
+    margin: 10px 0;
+    /* height: 70vh; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.enjoy {
+    background: #000;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.enjoy>h2,
+p {
+    color: white;
+}
+
+.enjoyText {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.enjoyContent {
+    margin: auto 50px;
+    width: 50%;
+    height: auto;
+}
+
+.enjoyContentVideo {
+    position: relative;
+    min-height: 300px;
+    margin: 5% auto;
+    min-width: 40%;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    height: 200px;
+    transform: translate(-48%, -50%);
+}
+
+.tv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    z-index: 10;
+
+    overflow: hidden;
+}
+
+.enjoypara {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+
+    body,
+    a,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        /* color: white; */
+    }
+
+    .heatb {
+        /* position: fixed; */
+        width: 100%;
+        /* z-index: 10; */
+    }
+
+    .contentHome {
+        width: 95%;
+        margin: 10px auto;
+        height: auto;
+        /* z-index: 1000; */
+        /* overflow: hidden; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        /* justify-content: flex-start; */
+    }
+
+    .enjoyText {
+        font-size: 16px;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .boxFeature1 {
+        margin: 0;
+    }
+
+    .getStartHome {
+        display: flex;
+
+        flex-direction: column;
+        /* padding: 10px 0; */
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .getStartInput {
+        margin: 10px 0;
+    }
+
+    .featureHome {
+        border: 1px solid red;
+        margin: 10% 0;
+        padding: 0;
+
+    }
+
+    .featureHome>h1 {
+        font-size: 27px;
+        font-weight: 500;
+    }
+
+    .featureHome>h3 {
+        font-size: 16px;
+    }
+
+    .featureHomeTitle {}
+
+    .feature {
+        z-index: -10;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .featureTitle {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .boxFeature1 {
+        position: relative;
+    }
+
+    .featureImage {
+        width: 100%;
+    }
+
+    .enjoy {
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        margin: 0px auto;
+        width: 100%;
+        position: relative;
+    }
+
+    .enjoyText {
+        font-weight: 700;
+        font-size: 1.9rem;
+    }
+
+    .enjoypara {
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .enjoyContent {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .enjoyContentVideo {
+        width: 100%;
+    }
+
+    .dnone {
+        display: none;
+    }
+
+    .tv {
+        max-width: 105%;
+        z-index: 100;
+
+        overflow: hidden;
+        max-height: 70%;
+    }
+
+    video {
+        max-width: 100%;
+        z-index: 10;
+        max-height: 41%;
+    }
+
+    .homeLogo {
+        max-width: 80px;
+        height: 55px;
+        vertical-align: middle;
+    }
+
+    .headerContent {
+        width: 100% !important;
+    }
+
+    .navBarNoSignUp {
+        width: 95% !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .conteHomeNewSize {
+        max-height: 140px;
+    }
+
+    .imageHome {
+        max-width: 100%;
+        z-index: 100;
+
+        overflow: hidden;
+        max-height: 100%;
+    }
+
+    .homeNewSize {
+        margin: auto 0;
+    }
+
+    #accordionExample {
+        width: 100% !important;
+    }
+
+    .accordion-button {
+        font-size: 20px;
+        font-weight: 300;
+        color: #971a20;
+    }
+
+    .containerAccordion {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .accordion-button {
+        color: white;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        cursor: pointer;
+    }
+
+    .stepOneOne,
+    .stepOneTitl,
+    .stepOneDetail {
+        text-align: start;
+    }
+
+    .bgDevice {
+        display: block;
+        width: 260px;
+        background: url(../images/Devices.png) no-repeat 50% 50%;
+        background-size: 260px;
+        height: 50px;
+    }
+    .bgLock {
+        display: block;
+        width: 60px;
+        background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Lock.png) no-repeat 50% 50%;
+        background-size: 60px;
+        height: 50px;
+    }
+
+
+    .check {
+        display: block;
+        width: 50px;
+        /* border: 1px solid; */
+        background: url(../images/Checkmark.png) no-repeat 50% 50%;
+        background-size: 260px;
+        height: 50px;
+        margin-top: 0;
+    }
+
+    .stepTwoStep {
+        text-align: inherit;
+        display: block;
+        margin: 20px 0% 0;
+        /* width: 50%; */
+        /* color: #e30813; */
+    }
+
+    .footerMargin {
+        /* background: #000; */
+        /* width: 100%; */
+        /* padding: 0; */
+    }
+
+    .featureStepOne {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .createPasswordWithd {
+        width: 270px !important;
+    }
+}
+
+#accordionExample {
+    width: 80%;
+    /* display: none; */
+    margin: 0px auto;
+    padding: 50px 0;
+}
+
+.accordion-item {
+    margin: 10px 0;
+    border: none;
+    background-color: rgb(24, 24, 24, 1);
+}
+
+.containerAccordion {
+    height: auto;
+    padding: 0 0 50px 0;
+}
+
+.containerAccordion {
+    background: #000;
+}
+
+.accordion-button {
+    background-color: rgb(24, 24, 24, 1);
+    color: white;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+}
+
+.accordion-button:hover {
+    background-color: rgb(100, 99, 99, 0.5);
+}
+
+.accordion-button:focus,
+.accordion-button:active {
+    background-color: rgb(24, 24, 24, 1);
+    color: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgb(24, 24, 24, 1);
+    color: #ffffff;
+}
+
+.plus {
+    float: left;
+}
+
+.accordion-button::after {
+    content: "\2b";
+    line-height: 10px;
+}
+
+/*StepOne*/
+.StepOne {
+    /* background-color: #f3f3f3; */
+    color: #333;
+    direction: ltr;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+        sans-serif;
+    font-size: 16px;
+}
+
+.contentStepOneFeature {
+    /* border: 1px solid; */
+    max-width: 340px;
+    margin: 100px auto 100px;
+    /* text-align: center; */
+}
+
+.contentCreatePassword {
+    /* max-width: 340px; */
+    margin: 100px auto 100px;
+}
+
+.featureStepOne {
+    /* border: 1px solid; */
+    /* overflow: hidden; */
+}
+
+.bgDevice {
+    background: url(../images/Devices.png) no-repeat 50% 50%;
+    background-size: 260px;
+    height: 90px;
+}
+.bgLock {
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Lock.png) no-repeat 50% 50%;
+    background-size: 60px;
+    height: 90px;
+}
+.stepOneTitl {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0.67em 0;
+    color: #333;
+}
+
+.stepOneOne {
+    padding: 20px 0 0 0;
+    display: inline-block;
+}
+
+.stepOneDetail {
+    margin: 0 0 20px 0;
+}
+
+.stepOneFooter {
+    background-color: #f3f3f3;
+}
+
+.linkDark {
+    color: #333;
+}
+
+.footerMargin {
+    margin: 0 10px;
+}
+
+/*CreatePassword*/
+.createPasswordWithd {
+    /* font-size: 32px; */
+    width: 35%;
+}
+
+.check {
+    background: url(../images/Checkmark.png) no-repeat 50% 50%;
+    background-size: 50px;
+    height: 50px;
+    /* width: 50px; */
+    /* border: 1px solid; */
+    /* margin: 20px auto; */
+}
+
+.textCheck {
+    /* border: 1px solid; */
+    display: block;
+    margin-bottom: 0;
+    width: 80%;
+}
+
+.checkMark-group {
+    display: flex;
+
+    margin-bottom: 20px;
+    margin-top: 15px;
+    /* text-align: left; */
+}
+
+.contentFeature {
+    max-width: 370px;
+    margin: 100px auto 100px;
+    /* text-align: center; */
+}
+
+.stepTwoStep {
+    /* border: 1px solid; */
+    text-align: inherit;
+}
+
+/*StepThree*/
+.containerStepThree {
+    max-width: 80%;
+    margin: 0 auto 50px;
+    max-height: auto;
+}
+.stepthree{
+    /* margin: 200%; */
+    max-height: fit-content;
+}
+
+.planGrid__planSelector {
+    display: flex;
+    justify-content: flex-end;
+}
+.spanSelected{
+    background-color: #e50914;
+    opacity: 0.6;
+    line-height: 100px;
+}
+.planGrid__planInput {
+    opacity: 0;
+}
+.planGrid__planLabel {
+    text-align: center;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    z-index: 0;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.spanSelected::after {
+    content: "";
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: -5%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid;
+}
+
+.planGrid__planInput:checked+.spanSelected:after {
+    border-width: 15px 15px 0;
+    color: #e50914;
+    z-index: 1;
+    opacity: 1;
+}
+.planGrid__planInput:checked+.spanSelected {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+
+}
+.planGrid__planInput:checked+.spanSelected {
+    opacity: 1;
+
+    background-color: #e50914;
+    
+}
+.planGrid__planInput:checked+.f {
+    opacity: 1;
+
+    background-color: #e50914;
+    
+}
+
+
+.planGrid__planInput:not(:checked)+.spanSelected:after {
+    border-width: 0;
+}
+.planGrid__selectorChoice{
+    background-color: transparent;
+    border: none;
+}
+.planGrid__featureTable{
+    margin:40px 0 0 0;
+    width: 100%;
+    /* border-collapse: collapse; */
+
+}
+tr{
+    border-bottom: 1px solid  rgba(184, 160, 160, 0.5) ;
+   
+}
+td{
+    padding: 14px 0;
+
+}
+.table{
+    /* max-width: 80%; */
+    /* max-height: 80%; */
+}
+td,tr{
+    /* max-width: 10px; */
+    /* padding: 15px 0 ; */
+    text-align: center;
+
+}
+tr{
+
+}
+.planGrid__featureCell{
+    text-align: start;
+}
+.mobiles{
+    color: rgb(221, 10, 10);
+}
+
+td{
+    font-weight: 500;
+    font-size: 17px;
+    color: #333;
+}
+.planGrid__cells{
+    /* color: aqua; */
+    /* border: 1px solid; */
+    /* position: relative; */
+    top: 0;
+    /* display: inline-block; */
+    /* display: flex; */
+    /* float: left; */
+    /* height: 10%; */
+  
+}
+.spanDevice{
+    font-size: 12px;
+    /* color: #333; */
+    opacity: .6;
+    font-weight: 400;
+}
+.phone{
+    /* border: 1px solid; */
+    display: block;
+    /* float:right; */
+}
+.fixePlan{ 
+    top: 0;
+    background: #ffffff;
+    z-index: 1000;
+    position: fixed;
+    width: 80%;
+    height: 130px;
+    /* border: 1px solid; */
+    /* margin: 0 auto; */
+    /* transition: 2s; */
+}
+.fixeMaxPlans{
+bottom: 56%;
+width: 80%;
+
+position: fixed;
+transition: 20s ease-in;
+
+/* background: #000; */
+}
+
+.h6{
+    /* margin: 700px 0; */
+}
+.fixeMaxPlanPos{
+    /* position: relative; */
+}
+
+@media screen and (max-width: 767px) {
+    .fixePlan{
+        top: -60px;
+        width: 100%;
+        position: fixed;
+        padding: 0 50px;
+        right: 0;
+        display: flex;
+        margin: 0 auto;
+        display: block;
+        height: 120px;
+        background: #ffffff;
+        /* height: 200px; */
+    }
+    .planGrid__featureCell{
+        display: none;
+    }
+    .planGrid__planSelector {
+        /* border: 1px solid red; */
+        display: flex;
+        /* margin: 0 -20px; */
+
+        justify-content: start;
+    }
+    .planGrid__planLabel {
+        width: 65px;
+       max-height: 55px;
+        margin: 0 auto;
+        width: 100%;
+        margin: 0 5px;
+        
+  
+
+    }
+    
+    .planGrid__selectorLabel{
+        line-height: 55px;
+        /* border: 1px solid red; */
+    }
+    .planGrid__featureTable{
+        /* border: 1px solid; */
+        
+        /* width: 100% !important; */
+        margin: 57px 0 0 0;
+        /* padding: 0 800px; */
+    }
+    table{
+        width: 100%;
+    }
+}
+@media screen and (max-width:820px) {
+    .fixePlan{
+        /* background: #000; */
+        /* padding: 10px 0; */
+    }
+    td{
+        padding: 20px 30px;
+        border: 1px solid;
+    
+    }
+    .planGrid__planLabel {
+
+  margin: 0 10px;
+/* padding: 0 0 100px 0; */
+    }
+  
+}
