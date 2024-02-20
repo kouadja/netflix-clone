@@ -17,8 +17,8 @@ const Welcome = () => {
       .get(`https://www.omdbapi.com`, {
         params: {
           apikey: apiKey,
-          s: "sniper",
-          y:2015,
+          s: "love",
+          y:2022,
           plot: "full",
           type: "movie",
           page: 1,
@@ -73,7 +73,7 @@ const Welcome = () => {
             </div>
           </div>
           <div className="boxFeature boxFeature2">
-            <img src={display.Poster} alt="" className="featureImage" loading="lazy" />
+            <img  style={{backgroundImage :`url(${hero ?? display.Poster})`}} alt="" className="featureImage" loading="lazy" />
           </div>
         </div>
 

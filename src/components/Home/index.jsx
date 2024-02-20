@@ -52,7 +52,7 @@ const handleOnchange = e=>{
                         <h3>Les plans commencent maintenant à 2,99 USD/mois.</h3>
                         <h3>Prêt à regarder ? Entrez votre e-mail pour créer ou redémarrer votre abonnement.</h3>
                     </div>
-                    < form className="d-flex getStartHome "  >
+                    < form className="d-flex getStartHome " >
                         {/* <Input/> */}
                         <input className="form-control me-2 getStartInput " id= "refInput1"  ref={refInput1}  type="search" placeholder="Search" aria-label="Search" />
                         <BtnRed handleFocusInput = {(e)=> handleFocusInput(e)}  id='refInput1'  styled={{...style, borderRadius: '5px', padding: '15px 20px', fontSize: '1.5rem', }}>Commencer</BtnRed>
