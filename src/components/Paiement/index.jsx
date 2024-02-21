@@ -20,10 +20,10 @@ const Paiement = () => {
           <h4 style={{ fontWeight: '600', fontSize: '20px', textAlign: 'center' }}>Secure for peace of mind.
             Cancel easily online.</h4>
 
-        </div>
         <Link to={'/welcome'}>
             <BtnRed styled={{ width: '100%', height: "60px", fontSize: "30px", fontWeight: '500' }}>Suivant</BtnRed>
           </Link>
+        </div>
       </div>
 
       <FooterSteps />
