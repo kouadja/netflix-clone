@@ -23,46 +23,46 @@ const StepThree = () => {
 
     const handleGenderChange = (event) => {
         setGender(event.target.value);
-        // if (event.target.id == "planGrid_planChoice_0") {
-        //     for (let i = 0; i < mobile.length; i++) {
-        //         mobile[i].classList.add('mobiles')
-        //     }
-        // } else {
-        //     for (let i = 0; i < mobile.length; i++) {
-        //         mobile[i].classList.remove('mobiles')
-        //     }
-        // }
+         if (event.target.id == "planGrid_planChoice_0") {
+             for (let i = 0; i < mobile.length; i++) {
+                 mobile[i].classList.add('mobiles')
+             }
+         } else {
+             for (let i = 0; i < mobile.length; i++) {
+                mobile[i].classList.remove('mobiles')
+             }
+         }
 
-        // if (event.target.id == "planGrid_planChoice_1") {
-        //     for (let i = 0; i < basique.length; i++) {
+         if (event.target.id == "planGrid_planChoice_1") {
+             for (let i = 0; i < basique.length; i++) {
 
-        //         basique[i].classList.add('mobiles')
-        //     }
-        // } else {
-        //     for (let i = 0; i < mobile.length; i++) {
-        //         basique[i].classList.remove('mobiles')
-        //     }
-        // }
-        // if (event.target.id == "planGrid_planChoice_2") {
-        //     for (let i = 0; i < standard.length; i++) {
+               basique[i].classList.add('mobiles')
+             }
+         } else {
+             for (let i = 0; i < mobile.length; i++) {
+                basique[i].classList.remove('mobiles')
+         }
+     }
+     if (event.target.id == "planGrid_planChoice_2") {
+         for (let i = 0; i < standard.length; i++) {
 
-        //         standard[i].classList.add('mobiles')
-        //     }
-        // } else {
-        //     for (let i = 0; i < mobile.length; i++) {
-        //         standard[i].classList.remove('mobiles')
-        //     }
-        // }
-        // if (event.target.id == "planGrid_planChoice_3") {
-        //     for (let i = 0; i < prime.length; i++) {
+             standard[i].classList.add('mobiles')
+         }
+     } else {
+         for (let i = 0; i < mobile.length; i++) {
+             standard[i].classList.remove('mobiles')
+         }
+     }
+     if (event.target.id == "planGrid_planChoice_3") {
+         for (let i = 0; i < prime.length; i++) {
 
-        //         prime[i].classList.add('mobiles')
-        //     }
-        // } else {
-        //     for (let i = 0; i < mobile.length; i++) {
-        //         prime[i].classList.remove('mobiles')
-        //     }
-        // }
+             prime[i].classList.add('mobiles')
+         }
+     } else {
+         for (let i = 0; i < mobile.length; i++) {
+             prime[i].classList.remove('mobiles')
+         }
+     }
 
 
 
@@ -73,21 +73,21 @@ const StepThree = () => {
         window.addEventListener('scroll', function (e) {
             const { scrollTop } = document.documentElement
 
-        //     if (scrollTop > "350") {
-        //         containerPlan[0].classList.add("fixePlan")
+         if (scrollTop > "350") {
+                containerPlan[0].classList.add("fixePlan")
 
-        //     }
-        //     else {
-        //         containerPlan[0].classList.remove("fixePlan")
-        //     }
-        //     if (scrollTop > "650") {
-        //         planGrid__featureTable[0].classList.add("fixeMaxPlan")
-        //     }
-        //     if (scrollTop <= "650") {
-        //         planGrid__featureTable[0].classList.remove("fixeMaxPlan");
-        //         // planGrid__featureTable[0].classList.add("fixeMaxPlanPos")
+            }
+            else {
+                containerPlan[0].classList.remove("fixePlan")
+            }
+            if (scrollTop > "650") {
+                planGrid__featureTable[0].classList.add("fixeMaxPlan")
+            }
+            if (scrollTop <= "650") {
+                planGrid__featureTable[0].classList.remove("fixeMaxPlan");
+                // planGrid__featureTable[0].classList.add("fixeMaxPlanPos")
 
-        //     }
+            }
         }
         )
 

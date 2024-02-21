@@ -12,30 +12,46 @@ const Welcome = () => {
   const [display ,setDisplay] = useState({})
   const page = 2;
 
+
+
+  const url = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc';
+  const options = {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YWEzYWYwNTRiYTk0YjJmMzk5Y2E1N2Q1YTA2NGJlZiIsInN1YiI6IjYzYmQxZWZjYWU2ZjA5M2M0MjlkMzU5MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.quhAqcaNj1XRMrJe7llSBMsv4NO5DxZnN8ecYjy9HfI'
+    }
+  };
+
+
+  
+
+
+
+
+
   useEffect(() => {
     axios
-      .get(`https://www.omdbapi.com`, {
-        params: {
-          apikey: apiKey,
-          s: "love",
-          y:2022,
-          plot: "full",
-          type: "movie",
-          page: 1,
-        },
-      })
+      .get(url, options)
       .then((response) => {
-        const recentMovies = response.data.Search.slice(0, 100);
-        console.log();
-        setMovie([...recentMovies]);
+        setMovie([response.data.results])
+
+        console.log(response.data.results)
+        setDisplay([response.data.results])
+   
+    
       })
       .catch((error) => console.log(error));
   }, []);
+
+  
   const handleClick = data =>{
     console.log(data.Poster)
     setDisplay(data)
 
   }
+  console.log(display)
+
 
   if (!movie) {
     <h1>Veillez patienté</h1>;
@@ -47,21 +63,19 @@ const Welcome = () => {
         <div className="feature">
           <div className="boxFeature boxFeature1">
             <h4>NETFLIX ORIGINAL</h4>
-            <h1 className="featureTitle"> {display.Title} </h1>
+            <h1 className="featureTitle"> {display.title} </h1>
             <div className="infoFeature">
               <span>{display.Year}</span>
               <span> | </span>
               <span className="border d-inline-block">18+</span>
               <span> | </span>
-              <span> {display.Type} </span>
+              <span> {display.release_date} </span>
               <span> | </span>
               <span>Romans policiers</span>
             </div>
             <h5>Regardez la saison 3 maintenant</h5>
             <p className="featureParagraph">
-              Le cartel de Cali reprend le pouvoir en Colombie. Les successeurs
-              d’Escobar passent à l’action et déclarent la guerre au
-              gouvernement.
+             {display.overview}
             </p>
             <div className="btnContentFeature d-flex ">
               <button className="btnFeature pr-3">
@@ -73,22 +87,53 @@ const Welcome = () => {
             </div>
           </div>
           <div className="boxFeature boxFeature2">
-            <img  style={{backgroundImage :`url(${hero ?? display.Poster})`}} alt="" className="featureImage" loading="lazy" />
+            <img  src={`https://image.tmdb.org/t/p/w500${ display?.poster_path}`} alt="" className="featureImage" loading="lazy" />
           </div>
         </div>
+ 
 
+        
         
         <div className="containerReview ">
           <div className="boxReview">
-            {movie.map((data) => {
+            {movie[0].map((data) => {
+             
               return (
+                <>
+                <div>
+
                 <img
-                  src={data.Poster}
-                  key={data.imdbID}
+                  src={`https://image.tmdb.org/t/p/w500${data.backdrop_path}`} 
+                  key={data.vote_count  }
                   alt=""
                   className="reviewImage"
                   onClick={() => handleClick(data)}
-                />
+                  />
+                  {/* <p>{data.original_title}</p> */}
+                </div>
+                </>
+              );
+            })}
+          </div>
+        </div>
+        <div className="containerReview ">
+          <div className="boxReview">
+            {movie[0].map((data) => {
+              console.log(data[0])
+              return (
+                <>
+                <div>
+
+                <img
+                  src={`https://image.tmdb.org/t/p/w500${data.backdrop_path}`} 
+                  key={data.vote_count  }
+                  alt=""
+                  className="reviewImage"
+                  onClick={() => handleClick(data)}
+                  />
+                  {/* <p>{data.original_title}</p> */}
+                </div>
+                </>
               );
             })}
           </div>
