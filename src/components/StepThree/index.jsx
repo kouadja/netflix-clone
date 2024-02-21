@@ -22,7 +22,7 @@ const StepThree = () => {
 
 
     const handleGenderChange = (event) => {
-        /* setGender(event.target.value);
+        setGender(event.target.value);
          if (event.target.id == "planGrid_planChoice_0") {
              for (let i = 0; i < mobile.length; i++) {
                  mobile[i].classList.add('mobiles')
@@ -62,7 +62,7 @@ const StepThree = () => {
          for (let i = 0; i < mobile.length; i++) {
              prime[i].classList.remove('mobiles')
          }
-     } */
+     }
 
 
 
@@ -70,7 +70,7 @@ const StepThree = () => {
 
     };
     useEffect(() => {
-        window.addEventListener('scroll', function (e) {
+      /*   window.addEventListener('scroll', function (e) {
             const { scrollTop } = document.documentElement
 
          if (scrollTop > "350") {
@@ -89,7 +89,7 @@ const StepThree = () => {
 
             }
         }
-        )
+        ) */
 
     }, [])
 
