@@ -22,7 +22,7 @@ const StepThree = () => {
 
 
     const handleGenderChange = (event) => {
-        setGender(event.target.value);
+        /* setGender(event.target.value);
          if (event.target.id == "planGrid_planChoice_0") {
              for (let i = 0; i < mobile.length; i++) {
                  mobile[i].classList.add('mobiles')
@@ -62,7 +62,7 @@ const StepThree = () => {
          for (let i = 0; i < mobile.length; i++) {
              prime[i].classList.remove('mobiles')
          }
-     }
+     } */
 
 
 
@@ -85,7 +85,7 @@ const StepThree = () => {
             }
             if (scrollTop <= "650") {
                 planGrid__featureTable[0].classList.remove("fixeMaxPlan");
-                // planGrid__featureTable[0].classList.add("fixeMaxPlanPos")
+                 planGrid__featureTable[0].classList.add("fixeMaxPlanPos")
 
             }
         }

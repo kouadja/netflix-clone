@@ -2,6 +2,7 @@ import React from 'react'
 import NavbarNoSign from '../NavbarNoSign';
 import { Link } from 'react-router-dom'
 import FooterSteps from '../FooterSteps'
+import BtnRed from '../BtnRed';
 
 // import StripeCheckout from 'react-stripe-checkout';
 const Paiement = () => {
@@ -20,7 +21,9 @@ const Paiement = () => {
             Cancel easily online.</h4>
 
         </div>
-
+        <Link to={'/welcome'}>
+            <BtnRed styled={{ width: '100%', height: "60px", fontSize: "30px", fontWeight: '500' }}>Suivant</BtnRed>
+          </Link>
       </div>
 
       <FooterSteps />
